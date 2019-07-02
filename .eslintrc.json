@@ -5,6 +5,9 @@
         "browser": true,
         "jest": true
     },
+    "settings": {
+        "import/extensions": [".js", ".jsx"]
+    },
     "rules": {
         "max-len": ["error", {"code": 100}],
         "react/jsx-filename-extension": [
@@ -15,8 +18,10 @@
         ],
         "react/prop-types": 0,
         "no-underscore-dangle": 0,
-        "import/imports-first": ["error", "absolute-first"],
+        "import/imports-first": ["off", "absolute-first"],
         "import/newline-after-import": "error",
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
         "prefer-promise-reject-errors": ["off"],
         "no-return-assign": ["off"]
     },
